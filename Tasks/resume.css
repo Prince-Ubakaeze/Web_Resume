@@ -101,3 +101,12 @@ h3 {
     background-color: #333; /*turns dark greywhen you hover */
     transform : translateY(-3px) /* makes the button jump up slightly */
 }
+
+#label {
+    font-weight: bold; /*makes it stand out a bit */
+    font-size: 0.9rem; /*makes it slightly smaller than the buttons */
+    color: #666; /* a medium grey so it looks like a "sub-instruction" */
+    text-transform: uppercase; /* makes it all cap for a professional look */
+    letter-spacing: 1px; /* adds a tiny bit of space between the letters */
+    margin-right: 5px; /*pushes the forst button away slightly */
+}
