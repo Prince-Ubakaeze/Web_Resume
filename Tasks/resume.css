@@ -8,14 +8,14 @@
 /* Defining theme for the page */
 :root {
     --primary-color:#2d3436; /* Dark slate for text */
-    --accent-color: #0984e3  /* Professional blue for links/headers */
+    --accent-color: #0984e3;  /* Professional blue for links/headers */
     --bg-color: #f9f9f9; /*light grey background */
     --card-bg: #ffffff; /* pure white for sections */
     --font-main: 'inter', sans-serif;
 }
 
 body {
-    font-family: var(--font-main)
+    font-family: var(--font-main);
     line-height: 1.6;
     color: var(--primary-color);
     background-color: var(--bg-color);
@@ -58,4 +58,23 @@ h2 {
 h3 {
     font-size: 1.1rem;
     margin-bottom: 5px;
+}
+
+#head {
+    display: flex; /* Magis: moves items from vertical to horizontal */
+    align-items: center; /* Magic: centers text vertically against the photo */
+    gap: 30px; /*Adds a space between the photo and the text */
+    margin-bottom: 40px; /* space below the whole header */
+}
+
+.pic {
+    width: 150px; /*sets a consistent size for the photo */
+    height: 150px; 
+    border-radius: 50%; /* turns the square photo into a professional circle */
+    object-fit: cover; /*prevents the face of the picture from looking squashed */
+    border: 3px solid var(var(--accent-color));
+}
+
+.top {
+    margin-bottom: 5px; /* tightens the gap betweek the name and contact info */
 }
