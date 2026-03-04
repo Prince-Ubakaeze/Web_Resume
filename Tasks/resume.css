@@ -78,3 +78,26 @@ h3 {
 .top {
     margin-bottom: 5px; /* tightens the gap betweek the name and contact info */
 }
+
+#nav {
+    display: flex; /*lines them up in a row */
+    margin-top: 15px; /* space between the contact info and the buttons */
+    gap: 15px; /* puts a little "gap" between each button */
+}
+
+#nav button {
+    text-decoration: none; /*kills the default blue underline */
+    color: white; /* text color */
+    background-color: var(--accent-color); /*uses the professional blue */
+    padding: 8px 16px; /*first number = Top/bottom */
+    border-radius: 20px; /* makes the corners round like a pill */
+    font-size: 0.85rem; /* makes the text slightly smaller */
+    font-weight: bold; 
+    transition: 0.3s; /* slow motion for the hover effect */
+}
+
+/* what happens when the mouse touches it */
+#nav button:hover {
+    background-color: #333; /*turns dark greywhen you hover */
+    transform : translateY(-3px) /* makes the button jump up slightly */
+}
